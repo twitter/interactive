@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Andes</title>
+    <link rel='stylesheet' media='all' href='css/style.css' />
+    <link href="https://twitter.com/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <h1>
+        #interactive
+      </h1>
+    </header>
+    <aside>
+    <h1>Andes</h1>
+      <p class='description'>
+      What would happen if all geolocated tweets in San Francisco were converted to an elevation map?
+      The geolocation data is taken from the <a href='https://blog.twitter.com/2013/geography-tweets-3' target='_blank'>Billion Strokes</a>' dataset.
+      </p>
+
+      <nav id='view-config'>
+      <p>
+      <b>View:</b>
+      <ul>
+        <li>Heat</li>
+        <li>Fill</li>
+        <li class='selected'>Watermark</li>
+        <li>Clear</li>
+        <li>Contour</li>
+        <li>Terrain</li>
+        <li>Grid</li>
+        <li>Dark</li>
+      </ul>
+      </p>
+
+      <p>
+      <b>Elevation:</b>
+      <ul class='inline-nav'>
+        <li>Low</li> |
+        <li>Medium</li> |
+        <li>High</li>
+      </ul>
+      </p>
+
+      <p>
+      <b>View Angle:</b>
+      <ul class='inline-nav'>
+        <li>PlaneXZ</li> |
+        <li>PlaneYZ</li>
+      </ul>
+      </p>
+
+      <p>
+      <b>Choose a City:</b>
+      <select id=city>
+        <option value='sf'>San Francisco</option>
+        <option value='ny'>New York</option>
+        <option value='is'>Istanbul</option>
+      </select>
+      </p>
+
+      <p id='quality-wording'>
+      You're currently running a <b>low quality version</b>.
+      To switch to high quality (at your own risk) <a href='#' id='switchToHigh'>click here</a>.
+      </p>
+
+      <div id='log-message'></div>
+
+      <a href='#' id='toggle'>Click here to toggle the menu.</a>
+      </nav>
+
+
+      <nav id=config style='display:none'>
+        <b>Options:</b>
+        <table>
+          <tr>
+            <td>Elevation:</td>
+            <td>
+              <input type=range min=0 max=1 step='0.01' value='0' id=elevation>
+            </td>
+          </tr>
+          <tr>
+            <td>Background:</td>
+            <td>
+              <input type=color id=background value='#111111'>
+            </td>
+          </tr>
+          <tr>
+            <td>Foreground:</td>
+            <td>
+              <input type=color id=foreground value='#008cf1'>
+            </td>
+          </tr>
+          <tr>
+            <td>Enable:</td>
+            <td>
+              <input type=checkbox checked id=enable>
+            </td>
+          </tr>
+          <tr>
+            <td>Shadow Map:</td>
+            <td>
+              <input type=range min=0 max=1 step='0.01' value=1 id=shadow>
+            </td>
+          </tr>
+          <tr>
+            <td>Ambient:</td>
+            <td>
+              <input type=color id=ambient value='#ffffff'>
+            </td>
+          </tr>
+          <tr>
+            <td>Diffuse:</td>
+            <td>
+              <input type=color id=diffuse value='#cccccc'>
+            </td>
+          </tr>
+          <tr>
+            <td>Specular:</td>
+            <td>
+              <input type=color id=specular value='#888888'>
+            </td>
+          </tr>
+          <tr>
+            <td>Shininess:</td>
+            <td>
+              <input type=range id=shininess min=0 max=32 value=10>
+            </td>
+          </tr>
+          <tr>
+            <td>Position:</td>
+            <td>
+              <input type=range min='-3' max='3' step='0.1' value='2.7' id='x'><br>
+              <input type=range min='-3' max='3' step='0.1' value='-0.2' id='y'><br>
+              <input type=range min='0' max='3' step='0.1' value='3'  id='z'><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Type:</td>
+            <td>
+              <select id='type'>
+                <option>fill</option>
+                <option>grid</option>
+                <option>contour</option>
+                <option selected>heat</option>
+                <option>watermark</option>
+                <option>terrain</option>
+                <option>clear</option>
+                <option>black</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </nav>
+
+
+    </aside>
+
+    <div id='canvas-container'>
+      <canvas id='map'></canvas>
+    </div>
+
+    <div class='footer'>
+      - made by <a href='http://twitter.com/philogb'>@philogb</a>. Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>.
+    </div>
+
+  <script src='index.yc.js'></script>
+  <!--<script src='js/mootools.js'></script>-->
+  <!--<script src='js/PhiloGL.nc.js'></script>-->
+  <!--<script src='js/controls.js'></script>-->
+  <!--<script src='js/index.js'></script>-->
+</body>
+</html>
+
+
+
