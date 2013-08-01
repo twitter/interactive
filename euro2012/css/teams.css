@@ -1,0 +1,387 @@
+@font-face {
+	font-family: "League Gothic";
+	src: url("League_Gothic-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Bebas Neue";
+	src: url("BebasNeue-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+  font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0.9em;
+  color: black;
+}
+
+.warning {
+  text-align: center;
+  background-color: darkred;
+  color: white;
+  font-weight: bold;
+  padding: 5px 0;
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+div#title {
+  background: url(../img/ball.png) -9px 0 no-repeat;
+  margin: 7px;
+}
+
+div#title > .main-title {
+  margin: 0px 0 0 70px;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+div#title > .main-title > iframe {
+
+}
+
+div.description {
+  font-size: 18px;
+  color: #999;
+  font-weight: 300;
+}
+
+a:link, a:visited {
+  color: #23A4FF;
+}
+
+a:hover, a:active {
+  color: #6EC3FF;
+}
+
+h1 {
+    font-weight: none;
+    font-size: 36px;
+}
+
+a.selected {
+  text-decoration: none;
+  color: white;
+}
+
+#container {
+  margin: auto;
+  position: relative;
+  width: 900px;
+  overflow-x: hidden;
+  margin-bottom: 70px;
+}
+
+#container.filtered {
+  -webkit-filter: sepia(1);
+  -o-filter: sepia(1);
+  -moz-filter: sepia(1);
+  -ms-filter: sepia(1);
+  filter: sepia(1);
+}
+
+
+
+.stream {
+  margin: 10px auto 10px auto;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 50px;
+}
+
+
+.stream-title {
+  padding: 5px 0 0 0;
+  margin: 0px 0 15px 0;
+  color: #555;
+}
+
+.stream-nav {
+  position: absolute;
+  right: 5px;
+}
+
+.stream-nav a {
+  background: white;
+  display: inline-block;
+  padding: 4px;
+  border: 1px solid #ccc;
+  font-size: 0.85em;
+}
+
+.stream-nav a.selected {
+  background: #eee;
+    cursor: default;
+    color: black;
+    text-decoration: none;
+}
+
+#stream-viz {
+  width: 900px;
+  height: 400px;
+  margin: 20px 0;
+  position: relative;
+}
+
+#background-stream-viz {
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.row-wrapper {
+  padding-top: 7px;
+  -webkit-transition: background-color 1000ms;
+  -moz-transition: background-color 1000ms;
+  -o-transition: background-color 1000ms;
+  -ms-transition: background-color 1000ms;
+  transition: background-color 1000ms;
+}
+
+.row-wrapper.selected {
+    background-color: #FF6;
+}
+
+.row-wrapper > a {
+    font-size: 0.8em;
+    float: right;
+    margin-top: -42px;
+}
+
+.row-wrapper > .color {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin: 11px 8px 0 0;
+  border: 1px solid #ccc;
+}
+
+.country-name {
+  font: normal 42px/1 "Bebas Neue","League Gothic",Haettenschweiler,Impact,"Arial Narrow",sans-serif;
+  text-transform: uppercase;
+}
+
+span.win {
+  color: goldenrod;
+}
+
+span.loss {
+  color: brown;
+}
+
+b {
+  font-weight: bold;
+}
+
+span.tie {
+}
+
+.row {
+  /*position: absolute;*/
+  /*left: 0;*/
+  display: block;
+  height: 106px;
+  /*z-index: 0;*/
+  -webkit-transition: background-color 2000ms;
+  -moz-transition: background-color 2000ms;
+  -o-transition: background-color 2000ms;
+  -ms-transition: background-color 2000ms;
+  transition: background-color 2000ms;
+}
+
+.row:hover {
+  cursor: pointer;
+}
+
+.row > .match {
+  width: 150px;
+  height: 106px;
+  float: left;
+  margin-top: -30px;
+}
+
+.image-match {
+  width: 145px;
+  height: 90px;
+}
+
+.match > .against-name {
+  text-align: center;
+  font-size: 0.83em;
+}
+
+.match:hover {
+  /*background-color: rgba(5, 173, 236, 0.02);*/
+  /*background-color: #f5f5ff;*/
+  text-decoration: underline;
+}
+
+
+#main-panel {
+  width: 950px;
+  border: 1px solid #CCC;
+  position: fixed;
+  z-index: 10;
+  background: white;
+  padding: 7px;
+
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #f3f3f3 76%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(76%,#f3f3f3)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f3f3f3 76%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#f3f3f3 76%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#f3f3f3 76%); /* IE10+ */
+background: linear-gradient(top,  #ffffff 0%,#f3f3f3 76%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f3',GradientType=0 ); /* IE6-9 */
+
+ -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+ -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+ -o-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+#background {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.2;
+  filter: alpha(opacity = 20);
+  top: 0;
+  left: 0;
+
+background: #555; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #555555 0%, #dddddd 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#555555), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #555555 0%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #555555 0%,#dddddd 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #555555 0%,#dddddd 100%); /* IE10+ */
+background: radial-gradient(center, ellipse cover,  #555555 0%,#dddddd 100%); /* W3C */
+
+}
+
+#main-panel .header {
+  position: relative;
+  height: 40px;
+  width: 900px;
+  margin: 10px auto 0 auto;
+}
+
+.chart-footer {
+  text-align: center;
+}
+
+.chart-left {
+  position: absolute;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transform: rotate(-90deg);
+  -o-transform-origin: 50% 50%;
+  -o-transform: rotate(-90deg);
+  -moz-transform-origin: 50% 50%;
+  -moz-transform: rotate(-90deg);
+
+  left: 0;
+  top: 190px;
+}
+
+#main-panel .navigation {
+  font: normal 22px/1 "Bebas Neue","League Gothic",Haettenschweiler,Impact,"Arial Narrow",sans-serif;
+  position: absolute;
+  top: 0px;
+  right: 9px;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin: 0 0.1em;
+  cursor: pointer;
+}
+
+.navigation ul li.disabled {
+  cursor: arrow;
+  color: #aaa;
+}
+
+#main-panel .name-wrapper {
+  position: absolute;
+  font: normal 32px/1 "Bebas Neue","League Gothic",Haettenschweiler,Impact,"Arial Narrow",sans-serif;
+  padding:0;
+  width: auto;
+  text-transform: uppercase;
+}
+
+#main-panel .name-wrapper > div {
+  display: inline-block;
+}
+
+#main-panel .name-wrapper .name > div {
+  text-align: center;
+}
+
+#main-panel .name-wrapper .name > span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#main-panel .name-wrapper .color {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0px;
+  border: 1px solid #eee;
+}
+
+.name-wrapper.team1 {
+  top: 10px;
+  left: 10px;
+}
+
+.name-wrapper.team2 {
+  bottom: 10px;
+  left: 10px;
+}
+
+#main-panel #infovis {
+  width: 900px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+#goals-canvas-wrapper {
+  position: absolute;
+  top: 58px;
+  left: 30px;
+}
+
+
+/*TOOLTIPS*/
+.tip {
+  color: #111;
+  width: 139px;
+  background-color: white;
+  border:1px solid #ccc;
+  -moz-box-shadow:#555 2px 2px 8px;
+  -webkit-box-shadow:#555 2px 2px 8px;
+  -o-box-shadow:#555 2px 2px 8px;
+  box-shadow:#555 2px 2px 8px;
+  opacity:0.85;
+  filter:alpha(opacity=85);
+  font-size:10px;
+  font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+  padding:7px;
+}
+
+.footer {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 0.85em;
+    color: #888;
+}

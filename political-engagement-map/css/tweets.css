@@ -1,0 +1,607 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  color: #333;
+}
+
+a:link, a:visited {
+  color: #23A4FF;
+}
+
+body {
+    background: url(../img/bg-flag.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+#loading-panel {
+  display: none;
+  z-index: 3000;
+}
+
+body.loading #loading-panel {
+  display: block;
+  position:absolute;
+  left: 0;
+  right:0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(20, 20, 20);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#loading-message {
+  width: 800px;
+  padding: 20px;
+  background: #ddd;
+  color: #333;
+  text-align: center;
+  margin: 100px auto 0 auto;
+  border-radius: 0.6em;
+  font-size: 40px;
+}
+
+div#title {
+  background: url(../img/logo-medium.png) 0 0 no-repeat;
+}
+
+div#title > .main-title {
+  margin: 0 0 10px 50px;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+div.description {
+  text-align: justify;
+  font-size: 0.9em;
+  font-weight: 200;
+  line-height: 1.3em;
+}
+
+div.description span {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #444;
+}
+
+.filter-container {
+  position: relative;
+}
+
+.filter-container .controls {
+  width: 334px;
+  margin: 0 auto;
+  padding: 7px;
+}
+
+input#filter {
+  width: 334px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  padding: 7px;
+  border: 1px solid #ccc;
+}
+
+input.start {
+  color: #ccc;
+}
+
+select {
+  font-size: 0.85em;
+}
+
+input[type=submit] {
+  font-size: 1em;
+}
+
+.filter-container select {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-container input[type=submit] {
+  width: 18%;
+  margin: 0;
+  padding: 0;
+}
+
+span#clear {
+  position: absolute;
+  top: 3px;
+  right: 86px;
+  color: #ccc;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  text-shadow: 0 0 2px #888;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 200;
+  margin: 2px;
+}
+
+h2#stats {
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+.main-content {
+  background: url(../img/texture-noise.png);
+  width: 902px;
+  padding: 10px;
+  border-left: 10px solid rgba(255, 255, 255, 0.5);
+  border-right: 10px solid rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+}
+
+.header {
+  text-align: left;
+  margin: auto;
+  position: relative;
+}
+
+.body {
+  height: 1010px;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px;
+}
+
+.body > .col {
+    float: left;
+}
+
+.col.tweet {
+  width: 500px;
+}
+
+.col.tweet label {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.body > .histogram {
+    width: 200px;
+}
+
+#no-tweets-left,
+#no-tweets-right {
+  font-size: 0.7em;
+  color: #888;
+  margin-top: 10px;
+}
+
+.map-container {
+  width: 700px;
+  margin: 0 auto;
+  position: absolute;
+  top: 280px;
+  left: 100px;
+}
+
+div#map {
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#color-legend {
+  height: 10px;
+  border: 1px solid #999;
+  width: 130px;
+  position: absolute;
+  right: 140px;
+  top: 340px;
+}
+
+#color-legend.democrat {
+  background: url(../img/blue.png) 0 -1px no-repeat;
+  background: -webkit-linear-gradient(left, #E0F3F8, #ABD9E9, #74ADD1, #4575B4, #313695);
+  background: -moz-linear-gradient(left, #E0F3F8, #ABD9E9, #74ADD1, #4575B4, #313695);
+  background: -o-linear-gradient(left, #E0F3F8, #ABD9E9, #74ADD1, #4575B4, #313695);
+  background: -ms-linear-gradient(left, #E0F3F8, #ABD9E9, #74ADD1, #4575B4, #313695);
+  background: linear-gradient(left, #E0F3F8, #ABD9E9, #74ADD1, #4575B4, #313695);
+}
+
+#color-legend.republican {
+  background: url(../img/red.png) 0 0 no-repeat;
+  background: -webkit-linear-gradient(left, #E0F3F8, #FDAE61, #F46D43, #D73027, #A50026);
+  background: -moz-linear-gradient(left, #E0F3F8, #FDAE61, #F46D43, #D73027, #A50026);
+  background: -o-linear-gradient(left, #E0F3F8, #FDAE61, #F46D43, #D73027, #A50026);
+  background: -ms-linear-gradient(left, #E0F3F8, #FDAE61, #F46D43, #D73027, #A50026);
+  background: linear-gradient(left, #E0F3F8, #FDAE61, #F46D43, #D73027, #A50026);
+}
+
+#color-legend ul {
+  background: transparent;
+  color: #333;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+#color-legend ul li {
+  list-style-type: none;
+  width: 50%;
+  font-size: 11px;
+  text-align: left;
+  margin-top: 17px;
+  float: left;
+}
+
+#color-legend ul li:nth-child(2) {
+  text-align: right;
+}
+
+.topic-breakdown {
+  height: 0.9em;
+  border: 1px solid #aaa;
+  width: 100%;
+  margin: 15px 0;
+  background: #eee;
+  /*float: left;*/
+
+}
+
+.topic-breakdown.left {
+  /*background: #00ACEE;*/
+  /*color: #fff;*/
+}
+
+.topic-breakdown.right {
+  /*background: #ab2920;*/
+  /*color: #fff;*/
+}
+
+.democrat .topic-breakdown.right {
+  display: none;
+}
+
+.republican .topic-breakdown.left {
+  display: none;
+}
+
+.topic-breakdown .topic-item {
+  float: left;
+  height: 100%;
+  font-size: 0.7em;
+  overflow: hidden;
+  text-align: center;
+}
+
+.topic-breakdown .topic-item > div {
+  border-left: 1px solid #777;
+  padding: 1px 1px;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: arrow !important;
+}
+
+#engagement-description {
+  margin-top: 10px;
+  text-align: justify;
+  font-size: 0.8em;
+}
+
+#tweet-container {
+    margin: 0 auto;
+}
+
+#layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bar {
+    max-height: 420px;
+    overflow: hidden;
+}
+
+.bar ul {
+    margin: 0;
+    padding: 0;
+    width: 190px;
+    position: relative;
+    font-size: 9px;
+}
+
+.left .bar ul {
+  padding-left: 10px;
+}
+
+.right .bar ul {
+  padding-right: 10px;
+}
+
+.bar ul li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+.bar ul li {
+    list-style-type: none;
+    height: 15px;
+    margin: 4px 0;
+}
+
+.bar ul li.show {
+
+}
+
+.bar ul li.hide {
+  display: none;
+}
+
+.bar ul li div {
+  overflow: visible;
+}
+
+.right .bar ul li .left-arrow {
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-right:7px solid #ab2920;
+  float: right;
+  margin-right: -8px;
+  background: transparent;
+  display: none;
+}
+
+.right .bar ul li.selected .left-arrow {
+  display: inherit;
+}
+
+.left .bar ul li .right-arrow {
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-left: 7px solid #00ACEE;
+  float: left;
+  margin-left: -8px;
+	background: transparent;
+  display: none;
+}
+
+.left .bar ul li.selected .right-arrow {
+  display: inherit;
+}
+
+.left .bar ul li {
+  border-left: 1px solid #00ACEE;
+}
+
+.right .bar ul li {
+	border-right: 1px solid #ab2920;
+}
+
+.bar ul li.selected:hover {
+  background: transparent;
+}
+
+.bar li div {
+    height: 15px;
+}
+
+.bar li div.tweet-text {
+  width: 800px;
+}
+
+.left {
+  text-align: left;
+}
+
+.left ul {
+}
+
+.right ul {
+}
+
+.left .bar li div {
+    background: #00acee;
+    float: left;
+    margin-right: 5px;
+}
+
+.right {
+    text-align: right;
+}
+
+.right .bar li div {
+    background: #ab2920;
+    float: right;
+    margin-left: 5px;
+}
+
+#stats {
+    padding: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
+#map-tooltip {
+    position:absolute;
+    font-family: Arial;
+    font-size: 0.7em;
+    background: white;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #ccc;
+    opacity: 0.8;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+div#metric-list {
+  position: absolute;
+  top: 380px;
+  right: 47px;
+  font-size: 0.7em;
+  padding: 0;
+  margin: 0;
+}
+
+.metric-selection-tip {
+  font-family: Arial;
+  font-size: 0.7em;
+  background: white;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  max-width: 200px;
+  text-align: justify;
+}
+
+
+ul#filter-list,{
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+}
+
+ul#filter-list > li {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 2px 3px;
+  border: 1px solid #ccc;
+  background:  white;
+  display: inline-block;
+  margin: 1px 0;
+}
+
+div#metric-list > a {
+  margin: 1px 0;
+  padding: 0 0.5em;
+  display: inline-block;
+  border-left: 1px solid #ccc;
+}
+
+div#metric-list > a.first {
+  border: none;
+}
+
+div#metric-list > a.selected {
+  cursor: default;
+  text-decoration: none;
+  color: #333;
+}
+
+ul#filter-list > li:hover {
+  border: 1px solid #aaa;
+}
+
+ul#filter-list > li.keyword > span.entry,
+ul#filter-list > li.state > span.entry,
+ul#filter-list > li > span.selected {
+  font-weight: bold;
+}
+
+ul#filter-list > li.metric > span.entry {
+  display:none;
+}
+
+ul#filter-list > li.metric > span.entry.selected {
+  display:inherit;
+}
+
+line.marker {
+    stroke: #aaa;
+    opacity: 0.5;
+}
+
+#states > path {
+    stroke: #aaa;
+    stroke-width: 0.3;
+    cursor: pointer;
+}
+
+#states > path:hover {
+  stroke: #000;
+}
+
+#states > path.selected {
+  stroke: #4bb14b;
+  stroke-width: 3;
+  stroke-dasharray: 9, 5;
+}
+
+#state-breakdown {
+  text-align: left;
+  font-size: 0.8em;
+  margin-bottom: 50px;
+}
+
+#state-breakdown ul {
+  padding: 0;
+  margin: 10px 0;
+}
+
+#state-breakdown ul li {
+  list-style-type: none;
+  margin: 3px 0;
+}
+
+#topics {
+  margin-bottom: 50px;
+}
+
+.tip-wrap {
+  font-size: 16px;
+  font-family: Georgia, Palatino, serif;
+  max-width: 300px;
+  background: white;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #ccc;
+  opacity: 0.95;
+  border-radius: 0.2em;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.twitter-tweet-rendered.tw-align-center {
+  float: none !important;
+  margin: 7px auto !important;
+}
+
+#log-panel {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 3px;
+  background-color: #ffcc2f;
+  color: #333;
+  font-weight: bold;
+  font-size: 0.95em;
+  font-weight: 200;
+  z-index: 4000;
+}
+
+#warning-message {
+  display: none;
+  text-align: center;
+  font-weight: 200;
+  padding: 3px 0;
+  margin: 7px 0;
+  font-size: 0.8em;
+  border-radius: 0.5em;
+  background-color: #ffcc2f;
+  color: #333;
+}
+
+#footer {
+  margin: auto;
+  font-size: 0.7em;
+  padding-bottom: 10px;
+}
+
+.twt-buffer-button,.twt-o,.twt-o div,.twt-o blockquote,.twt-o .p-author,.twt-o .footer,.twt-border,.twt-o p,.twt-o ul,.twt-o ol,.twt-o li,.twt-o dl,.twt-o dt,.twt-o dd,.twt-o img,.twt-o a img,.twt-o a,.twt-o b,.twt-o i,.twt-o span,.twt-o time,.twt-o abbr,.twt-o iframe,.twt-timeline,.twt-timeline li{position:static!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;z-index:auto!important;float:none!important;width:auto!important;height:auto!important;max-width:none!important;max-height:none!important;min-width:0!important;min-height:0!important;padding:0!important;margin:0!important;overflow:visible!important;clip:auto!important;clear:none!important;font:normal normal normal 12px/16px "Helvetica Neue",Arial,sans-serif!important;letter-spacing:normal!important;word-spacing:normal!important;color:#333!important;text-align:left!important;text-decoration:none!important;text-indent:0!important;text-overflow:clip!important;-webkit-text-size-adjust:none!important;text-shadow:none!important;text-transform:none!important;word-wrap:normal!important;white-space:normal!important;vertical-align:baseline!important;list-style:none!important;cursor:auto!important;background:transparent!important;border:0!important;-webkit-border-radius:0!important;-moz-border-radius:0!important;-ms-border-radius:0!important;-o-border-radius:0!important;border-radius:0!important;quotes:none!important;-webkit-outline:0!important;-moz-outline:0!important;-ms-outline:0!important;-o-outline:0!important;outline:0!important;-webkit-opacity:1!important;-moz-opacity:1!important;-ms-opacity:1!important;-o-opacity:1!important;opacity:1!important;filter:!important;visibility:visible!important;size:auto!important;-webkit-box-shadow:none!important;-moz-box-shadow:none!important;-ms-box-shadow:none!important;-o-box-shadow:none!important;box-shadow:none!important;direction:ltr!important;marks:none!important;page:auto!important;-o-set-link-source:none!important}.twt-tweet .p-author::before,.twt-tweet .p-author::after{display:table!important;content:""!important}.twt-tweet .p-author::after{clear:both!important}.twt-tweet,.twt-border,.twt-buffer,.twt-tweet .p-author{zoom:1!important}.twt-buffer,.twt-buffer button{height:1%!important}.twt-o a,.twt-o a span,.twt-o a img,.twt-o a b,.twt-o a i,.twt-o a .avatar{cursor:hand!important;cursor:pointer!important}.twt-tweet,.twt-tweet .footer,.twt-tweet .p-author,.twt-timeline .twt-buffer-button,.twt-tweet .badges li,.twt-reply,.twt-o,.twt-border{position:relative!important}.twt-tweet .avatar,.twt-tweet .permalink,.twt-tweet .twt-follow-button,.twt-inline .border,.twt-reply .border-arrow{position:absolute!important}.twt-tweet .twt-follow-button{top:1px!important;left:auto!important;width:150px!important;height:20px!important}.twt-timeline .permalink{top:1px!important}.twt-tweet .twt-follow-button,.twt-tweet .permalink,.twt-inline .border{right:0!important}.twt-inline .permalink{right:12px!important}.twt-tweet .avatar,.twt-tweet .border,.twt-reply .border-arrow{left:0!important}.twt-tweet .border,.twt-reply .border-arrow{bottom:0!important}.twt-inline .permalink{top:12px!important}.twt-tweet .avatar{top:1px!important}.twt-inline .avatar{top:3px!important}.twt-border .twt-reply .border{left:54px!important}.twt-inline .avatar{left:-42px!important}.twt-reply .border{left:42px!important}.twt-o ul,.twt-o ol,.twt-o li,.twt-o div,.twt-o blockquote,.twt-o p,.twt-timeline li,.twt-buffer-button,.twt-tweet .retweet-credit,.twt-tweet .twt-actions a,.twt-tweet .twt-actions a b,.twt-tweet .twt-actions a i,.twt-tweet .twt-actions li,.twt-tweet .view-details,.twt-tweet img,.twt-tweet .twt-media img,.twt-tweet .in-reply,.twt-tweet .p-author .p-name,.twt-tweet .p-author .p-nickname,.twt-tweet .p-author,.twt-tweet .retweet-credit i,.twt-tweet .p-author .badges,.twt-tweet .p-author .badges li.twt-tweet .badges li,.twt-tweet .permalink .dt-updated,.twt-tweet .permalink i,.twt-tweet abbr{display:block!important}.twt-o cite,.twt-o a,.twt-o b,.twt-o i,.twt-o time,.twt-o span,.twt-o em,.twt-inline .in-reply,.twt-inline .p-author .p-nickname{display:inline!important}.twt-narrow .footer .twt-actions b{display:none!important}.twt-tweet .e-content .p-name{margin:7px 5px 6px 0!important}.twt-tweet .twt-actions a i{margin:1px 5px 0 8px!important;*margin:1px 2px 0 3px!important}.twt-tweet .twt-actions .retweet-action i,.twt-tweet .twt-actions .unretweet-action i{margin-top:1px!important;margin-right:3px!important}.twt-tweet .twt-actions .favorite-action i,.twt-tweet .twt-actions .unfavorite-action i{margin-top:-1px!important;margin-right:4px!important}.twt-border .twt-buffer-show{margin:12px 12px 0 12px!important}.twt-tweet .twt-media{margin:7px 0 7px!important}.twt-narrow .footer .twt-actions a i{margin-right:2px!important;margin-left:3px!important}.twt-tweet .retweet-credit i{margin:4px 4px 0 0!important}.twt-tweet .retweet-credit,.twt-tweet .p-author{margin-top:-2px!important}.twt-inline .p-nickname{margin-top:2px!important}.twt-inline .twt-media{margin-top:8px!important}.twt-inline .p-author{margin-right:75px!important}.twt-tweet .p-author .p-name,.twt-tweet .badges{margin-right:4px!important}.twt-buffer-show{margin-bottom:5px!important}.twt-border .twt-reply{margin-bottom:2px!important}.twt-timeline .twt-tweet .retweet-credit{margin-bottom:3px!important}.twt-tweet .retweet-credit{margin-bottom:7px!important}.twt-reply{margin-bottom:15px!important}.twt-inline .e-content .p-name{margin:0 5px 2px 0!important}.twt-tweet .badges{margin-top:1px!important}.twt-tweet .twt-protected{margin-top:3px!important}.twt-tweet .permalink i{margin:2px 0 0 5px!important}.twt-tweet .footer{padding-top:2px!important}.twt-border .twt-tweet{padding:12px!important}.twt-reply,.twt-inline .twt-tweet,.twt-tweet .p-author .p-nickname,.twt-tweet .p-author .p-name{padding-left:42px!important}.twt-reply{padding-bottom:12px!important}.twt-border .twt-reply{padding-left:54px!important}.twt-border .twt-inline .twt-tweet{padding:12px 12px 8px 54px!important}.twt-timeline .twt-tweet{padding:12px 0 8px 42px!important}.twt-inline .p-author .p-name,.twt-inline .p-author .p-nickname{padding:0!important}.twt-buffer-button{padding:0 1px!important}.twt-tweet .view-details,.twt-tweet .in-reply,.twt-tweet .p-author .p-name,.twt-tweet .p-author .p-nickname,.twt-tweet .twt-actions a,.twt-tweet .twt-actions a i,.twt-tweet .twt-actions li,.twt-tweet .twt-actions a b,.twt-tweet .retweet-credit i,.twt-tweet .badges,.twt-tweet .badges li,.twt-tweet .permalink .dt-updated,.twt-tweet .permalink i,.twt-inline .p-author .p-nickname,.twt-inline .in-reply,.twt-rtl .footer .twt-actions{_display:inline!important;float:left!important}.twt-rtl .view-details,.twt-rtl .in-reply,.twt-rtl .p-author .p-name,.twt-rtl .p-author .p-nickname,.twt-rtl .twt-actions a,.twt-rtl .twt-actions a i,.twt-rtl .twt-actions li,.twt-rtl .twt-actions a b,.twt-rtl .retweet-credit i,.twt-rtl .badges,.twt-rtl .badges li,.twt-rtl .permalink .dt-updated,.twt-rtl .permalink i,.twt-rtl-inline .p-author .p-nickname,.twt-rtl-inline .in-reply,.twt-tweet .twt-actions{float:right!important}.twt-tweet-list .twt-actions{margin-top:-1px!important}.twt-actions a i,.twt-tweet .badges li,.twt-tweet .permalink i,.twt-tweet .retweet-credit i,.twt-reply .border-arrow{background:transparent url(sprite.png) repeat-x 0 0!important;_background-image:url(sprite-ie6.gif)!important;background-size:49px 137px!important}.twt-rtl .twt-actions a i,.twt-rtl .badges li,.twt-rtl .permalink i,.twt-rtl .retweet-credit i.twt-rtl .twt-reply .border-arrow{background-image:url(sprite.rtl.png)!important;_background-image:url(sprite-ie6.rtl.gif)!important}@media(-webkit-min-device-pixel-ratio:2){.twt-actions a i,.twt-tweet .badges li,.twt-tweet .permalink i,.twt-tweet .retweet-credit i,.twt-reply .border-arrow{background-image:url(sprite@2x.png)!important}.twt-rtl .twt-actions a i,.twt-rtl .badges li,.twt-rtl .permalink i,.twt-rtl .retweet-credit i,.twt-rtl .twt-reply .border-arrow{background-image:url(sprite@2x.rtl.png)!important}!important}.twt-actions a i{overflow:hidden!important}.twt-tweet .badges li{_text-indent:-999em!important;vertical-align:-15%!important;background-position:0 -87px!important}.twt-tweet abbr{text-indent:-999em!important}.twt-tweet .badges .twt-protected{background-position:0 -128px!important}.twt-inline .badges .twt-protected{background-position:0 -127px!important}.twt-border{_width:250px!important;max-width:500px!important;min-width:250px!important}.twt-tweet .badges .twt-verified{width:15px!important;height:15px!important}.twt-tweet .badges .twt-protected{width:8px!important;height:10px!important}.twt-tweet .permalink i{width:14px!important;height:11px!important}.twt-tweet .retweet-credit i{width:14px!important;height:8px!important;background-position:0 -17px!important}.twt-actions .reply-action i{width:18px!important;height:13px!important;background-position:0 -30px!important}.twt-actions .reply-action:hover i,.twt-actions .reply-action:focus i{background-position:-23px -30px!important}.twt-actions .retweet-action i,.twt-actions .unretweet-action i{width:22px!important;height:12px!important;background-position:0 -48px!important}.twt-actions .retweet-action:hover i,.twt-actions .retweet-action:focus i,.twt-actions .unretweet-action:hover i,.twt-actions .unretweet-action:focus i{background-position:-27px -48px!important}.twt-tweet .twt-actions .favorite-action i,.twt-tweet .twt-actions .unfavorite-action i{width:16px!important;height:15px!important;background-position:0 -66px!important}.twt-actions .favorite-action:hover i,.twt-actions .favorite-action:focus i,.twt-actions .unfavorite-action:hover i,.twt-actions .unfavorite-action:focus i{background-position:-21px -66px!important}.twt-follow-button{width:80px!important;height:20px!important}.twt-tweet .avatar,.twt-tweet .avatar img{width:32px!important;height:32px!important}.twt-reply .border{_width:100%!important;height:7px!important}.twt-tweet .twt-actions a b{_display:none!important}.twt-border .twt-reply .border-arrow{background-position:12px -117px!important}.twt-reply .border-arrow{width:42px!important;height:6px!important;overflow:hidden!important;background-position:0 -106px!important}.twt-border .twt-reply .border-arrow{width:54px!important}.twt-tweet .media-iframe-wrap{position:relative!important;height:0!important;padding-top:25px!important;padding-bottom:68.25%!important}.twt-tweet iframe{position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important}.twt-tweet .twt-media img{_width:100%!important;max-width:100%!important;max-height:360px!important;-ms-interpolation-mode:bicubic!important}.twt-buffer-button{width:100%!important;height:0!important}.twt-tweet .e-content .p-name{width:100%!important}.twt-buffer-show .twt-buffer-button{height:30px!important}.twt-tweet .avatar,.twt-buffer-button{-webkit-border-radius:4px!important;-moz-border-radius:4px!important;border-radius:4px!important}.twt-tweet .avatar img,.twt-border{-webkit-border-radius:5px!important;-moz-border-radius:5px!important;border-radius:5px!important}.twt-border .twt-reply{-moz-border-radius:5px 5px 0 0!important;border-radius:5px 5px 0 0!important;-webkit-border-top-right-radius:5px!important;-webkit-border-top-left-radius:5px!important}.twt-buffer-show .twt-buffer-button{border:1px solid #ccc!important}.twt-buffer-show .twt-buffer-button:hover{border-color:#bbb!important}.twt-inline .twt-tweet{border-bottom:1px solid #e8e8e8!important}.twt-reply .border{border-bottom:1px solid #ccc!important}.twt-inline .twt-last,.twt-buffer-button{border:0!important}.twt-border{background-color:#fff!important}.twt-border .twt-reply{background:#f6f6f6!important}.twt-error .avatar{background:#ccc!important}.twt-buffer-button{background-color:#ddd!important;background-image:-moz-linear-gradient(#fff,#ddd)!important;background-image:-ms-linear-gradient(#fff,#ddd)!important;background-image:-o-linear-gradient(#fff,#ddd)!important;background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#ddd))!important;background-image:linear-gradient(#fff,#ddd)!important}.twt-buffer-button:hover{background-color:#eee!important;background-image:-moz-linear-gradient(#f8f8f8,#d8d8d8)!important;background-image:-ms-linear-gradient(#f8f8f8,#d8d8d8)!important;background-image:-o-linear-gradient(#f8f8f8,#d8d8d8)!important;background-image:-webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#d8d8d8))!important;background-image:linear-gradient(#f8f8f8,#d8d8d8)!important}.twt-buffer-button:active{background-color:#ccc!important;-webkit-box-shadow:inset 0 3px 7px rgba(0,0,0,0.1),0 1px 2px rgba(0,0,0,0.05)!important;-moz-box-shadow:inset 0 3px 7px rgba(0,0,0,0.1),0 1px 2px rgba(0,0,0,0.05)!important;box-shadow:inset 0 3px 7px rgba(0,0,0,0.1),0 1px 2px rgba(0,0,0,0.05)!important}.twt-tweet .retweet-credit i{font-size:10px!important}.twt-reply .p-author a,.twt-reply .p-author span,.twt-reply .e-content .p-name,.twt-reply .e-content .p-name a,.twt-reply .e-content .p-name a b{font-size:12px!important}.twt-buffer-button{font-size:13px!important}.twt-tweet .e-content .p-name,.twt-tweet .e-content .p-name a,.twt-tweet .e-content .p-name a b{font-size:16px!important;-webkit-text-size-adjust:auto!important}.twt-inline .e-content .p-name,.twt-inline .e-content .p-name a,.twt-inline .e-content .p-name a b,.twt-tweet .p-author .p-name,.twt-tweet .p-author .badges,.twt-tweet .p-author .dot{font-size:14px!important}.twt-inline .twt-error .twt-error{line-height:10px!important}.twt-tweet .view-details,.twt-tweet .e-content .p-name,.twt-tweet .e-content .p-name a,.twt-tweet .e-content .p-name a b{line-height:22px!important}.twt-tweet .p-author a,.twt-tweet .p-author span,.twt-inline .e-content .p-name,.twt-inline .e-content .p-name a,.twt-inline .e-content .p-name a b,.twt-inline .twt-error,.twt-inline .view-details{line-height:18px!important}.twt-tweet .twt-error,.twt-tweet .view-details,.twt-tweet time,.twt-tweet time span,.twt-tweet .p-author,.twt-tweet .badges,.twt-tweet .badges li,.twt-tweet .p-author .dot,.twt-tweet .in-reply,.twt-tweet .retweet-credit{line-height:13px!important}.twt-reply .p-author a,.twt-reply .p-author span,.twt-reply .e-content .p-name,.twt-reply .e-content .p-name a,.twt-reply .e-content .p-name a b{line-height:16px!important}.twt-timeline .twt-buffer-button{line-height:29px!important}.twt-tweet .p-author a,.twt-tweet .footer a,.twt-tweet em,.twt-tweet b,.twt-tweet span,.twt-tweet span a,.twt-tweet .p-author a:hover .p-nickname,.twt-tweet .p-author a:hover .p-nickname b,.twt-tweet .p-author a:focus .p-nickname,.twt-tweet .p-author a:focus .p-nickname b{color:#999!important}.twt-tweet span a:hover,.twt-tweet .p-author a:hover,.twt-tweet .footer a:hover,.twt-tweet a:hover span,.twt-tweet a:hover b,.twt-tweet .p-author a:focus,.twt-tweet .footer a:focus,.twt-tweet a:focus span,.twt-tweet a:focus b{color:#777!important}.twt-tweet a.permalink span{color:#bbb!important}.twt-tweet .p-author a:hover .p-name,.twt-tweet .p-author a:focus .p-name{color:#000!important}.twt-tweet .e-content .p-name a,.twt-tweet .e-content .p-name b{color:#666!important}.twt-tweet .e-content .p-name a:hover,.twt-tweet .e-content .p-name a:hover b,.twt-tweet .e-content .p-name a:focus,.twt-tweet .e-content .p-name a:focus b{color:#444!important}.twt-timeline .twt-buffer-button,.twt-tweet .p-author .p-name{color:#333!important}.twt-o .twt-error{color:#ab2920!important}.twt-o a:link,.twt-o a:visited,.twt-o a:active,.twt-o a:hover,.twt-o a:focus,.twt-tweet .p-author a:hover .p-nickname,.twt-tweet .p-author a:hover .p-nickname b,.twt-tweet .p-author a:focus .p-nickname,.twt-tweet .p-author a:focus .p-nickname b{text-decoration:none!important}.twt-o a:hover b,.twt-o a:focus b,.twt-tweet a:hover span,.twt-tweet a:focus span,.twt-tweet .e-content .p-name .link:hover,.twt-tweet .e-content .p-name .link:focus,.twt-tweet .in-reply a:hover,.twt-tweet .in-reply a:focus,.twt-tweet .view-details:hover,.twt-tweet .view-details:focus{text-decoration:underline!important}.twt-tweet .e-content .p-name{overflow:hidden!important;word-wrap:break-word!important}.twt-tweet .e-content .p-name,.twt-o .e-content .p-name a,.twt-o .e-content .p-name b{font-family:Georgia,Palatino,serif!important}.twt-tweet .p-author .p-name{font-weight:bold!important}.twt-border{border:#ddd 1px solid!important;border-top-color:#eee!important;border-bottom-color:#bbb!important;-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.15)!important;-moz-box-shadow:0 1px 3px rgba(0,0,0,0.15)!important;box-shadow:0 1px 3px rgba(0,0,0,0.15)!important}.twt-tweet{_height:30px!important;min-height:30px!important}.twt-tweet .badges li,.twt-tweet .footer,.twt-tweet .p-author{overflow:hidden!important;zoom:1!important}.twt-tweet .p-author{min-height:35px!important}.twt-tweet .permalink{z-index:5!important}.twt-reply .avatar::after{display:none!important}.twt-tweet .avatar::after{position:absolute!important;top:0!important;left:0!important;display:block!important;width:32px!important;height:32px!important;-webkit-border-radius:4px!important;-moz-border-radius:4px!important;border-radius:4px!important;content:" "!important}.twt-tweet .article .footer{overflow:hidden!important}.twt-actions li,.twt-actions a,.twt-actions i,.twt-actions b{visibility:hidden!important;_visibility:visible!important}.twt-tweet:hover .twt-actions li,.twt-tweet:hover .twt-actions a,.twt-tweet:hover .twt-actions i,.twt-tweet:hover .twt-actions b,.twt-tweet:focus .twt-actions li,.twt-tweet:focus .twt-actions a,.twt-tweet:focus .twt-actions i,.twt-tweet:focus .twt-actions b,.twt-always-show-actions .twt-actions,.twt-always-show-actions .twt-actions li,.twt-always-show-actions .twt-actions a,.twt-always-show-actions .twt-actions i,.twt-always-show-actions .twt-actions b,.twt-touch .twt-actions li,.twt-touch .twt-actions a,.twt-touch .twt-actions i,.twt-touch .twt-actions b{visibility:visible!important}.twt-tweet .twt-actions a,.twt-tweet .twt-actions a b,.twt-tweet .twt-actions a i,.twt-tweet .twt-actions li{outline:0!important}.twt-touch .twt-actions a{padding-left:15px!important}.twt-tweet .retweet-credit i{vertical-align:middle!important}.twt-inline .e-content .p-name,.twt-inline .e-content .p-name a,.twt-inline .e-content .p-name a b{font-family:"Helvetica Neue",Arial,sans-serif!important}.twt-inline .p-author{overflow:visible!important}.twt-inline .p-author{min-height:0!important}.twt-inline .twt-tweet{min-height:47px!important}.twt-buffer-button{overflow:hidden!important;text-align:center!important;text-shadow:0 1px 0 #fff!important;cursor:pointer!important;-webkit-transition:height .25s ease!important;-moz-transition:height .25s ease!important;transition:height .25s ease!important}.twt-tweet .p-author .p-nickname{clear:both!important}.twt-inline .p-author .p-nickname{clear:none!important}.twt-error .p-author a .p-name,.twt-error .p-author a:hover .p-name,.twt-error .p-author a:focus .p-name,.twt-error .e-content .p-name{cursor:default!important}.twt-tweet .twt-error{text-align:right!important}.twt-error .twt-error,.twt-inline .twt-tweet .twt-error,.twt-reply .twt-error{text-align:left!important}.twt-inline .footer .twt-error{margin-bottom:3px!important}.twt-rtl .avatar,.twt-rtl .border-arrow{right:0!important;left:auto!important}.twt-rtl .twt-follow-button,.twt-rtl .permalink{right:auto!important}.twt-rtl-inline .permalink{left:-75px!important}.twt-rtl-inline .border{right:54px!important;left:0!important}.twt-border .twt-rtl-inline .border{left:0!important}.twt-rtl-inline .p-author .avatar{right:-42px!important}.twt-rtl .twt-reply .border{right:42px!important;left:auto!important}.twt-rtl-inline .twt-tweet,.twt-rtl .p-author .p-nickname,.twt-rtl .p-author .p-name{padding-right:42px!important;padding-left:0!important}.twt-border .twt-rtl-inline{padding-right:54px!important;padding-left:12px!important}.twt-rtl-inline .p-author .p-name,.twt-rtl-inline .p-author .p-nickname{padding-right:0!important}.twt-border .twt-rtl .twt-reply{padding-right:54px!important;padding-left:0!important}.twt-rtl .p-author .p-name,.twt-rtl .badges{margin-right:0!important;margin-left:4px!important}.twt-rtl-inline .p-author{margin-right:0!important;margin-left:75px!important}.twt-rtl .permalink i{margin-left:0!important}.twt-rtl-body .e-content .p-name{text-align:right!important;direction:rtl!important}.twt-rtl-body .e-content .p-name .h-card,.twt-rtl-body .e-content .p-name .ht{display:inline-block!important;direction:ltr!important}.twt-rtl .twt-actions .reply-action i,.twt-rtl .twt-actions .retweet-action i,.twt-rtl .twt-actions .unretweet-action i,.twt-rtl .twt-actions .favorite-action i,.twt-rtl .twt-actions .unfavorite-action i,.twt-rtl .twt-actions a i{margin-right:8px!important;margin-left:4px!important}.twt-border .twt-inline .twt-rtl{padding:12px 54px 8px 12px!important}.twt-inline .twt-rtl .p-author{margin-right:0!important;margin-left:75px!important}.twt-inline .twt-rtl .avatar{right:-42px!important}.twt-inline .twt-rtl-inline .twt-tweet,.twt-inline .twt-rtl .p-author .p-nickname,.twt-inline .twt-rtl .p-name{padding-right:0!important;padding-left:0!important}.twt-inline .twt-rtl .permalink{left:-75px!important}.twt-rtl .twt-actions li i,.twt-rtl-inline .permalink .dt-updated{*float:none!important}.twt-rtl .twt-actions li{*display:inline!important}.twt-rtl .twt-actions{*width:208px!important}.twt-rtl-narrow .twt-actions{*width:90px!important}.twt-rtl .twt-actions li a,.twt-rtl .twt-actions li i,.twt-rtl .twt-actions li b{*position:relative!important;*display:inline!important;*float:left!important}.twt-rtl .twt-actions li a{*margin-right:30px!important}.twt-rtl .footer .twt-actions li i{*position:absolute!important;*right:-24px!important;*margin-right:0!important;*margin-left:0!important}.twt-rtl .footer .twt-actions .favorite-action,.twt-rtl .footer .twt-actions .unfavorite-action{*margin-right:25px!important}.twt-rtl .footer .twt-actions .favorite-action i,.twt-rtl .footer .twt-actions .unfavorite-action i{*right:-18px!important}.twitter-tweet-rendered{position:relative!important;max-width:550px!important;margin:7px 0!important;clear:both!important;font:normal normal normal 14px/16px 'Helvetica Neue',Arial,sans-serif!important;color:#333!important}.twitter-tweet-rendered.tw-align-left{float:left!important;margin:-4px 12px 7px 0!important}.twitter-tweet-rendered.tw-align-right{float:right!important;margin:-4px 0 7px 12px!important}.twitter-tweet-rendered.tw-align-center{float:none!important;width:70%!important;margin:7px auto!important}

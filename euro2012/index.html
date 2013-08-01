@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>#Euro2012 - A visualization for the action on Twitter during the European football tournament</title>
+    <link rel="stylesheet" media="all" type="text/css" href="css/teams.css" />
+    <!--[if lte IE 7]>
+      <link rel="stylesheet" media="all" type="text/css" href="css/ie7.css" />
+    <![endif]-->
+    <meta charset='utf-8' />
+  </head>
+  <body>
+    <div id="log-panel" style="display:none;">
+      <span id="log-message"></span>
+    </div>
+
+    <div id="container">
+      <div id="title">
+        <div class='main-title'>#Euro2012</div>
+        <div id='links' class="description">A summary for the action on Twitter during the European football tournament. <a href="https://twitter.com/share"
+                class="twitter-share-button" data-url="https://euro2012.twitter.com/" data-via="twitter">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+        <!--[if lte IE 8]>
+          <div class='warning'>
+            Warning: Your browser is only partially supported. Please use either <a href='http://www.google.com/chrome/'>Google Chrome</a>, <a href='http://www.opera.com/download/'>Opera</a>, <a href='http://www.apple.com/safari/'>Safari</a>, <a href='http://www.mozilla.org/en-US/firefox/new/'>Firefox</a> or <a href='http://windows.microsoft.com/en-us/internet-explorer/products/ie/home'>IE 9+</a>.
+          </div>
+        <![endif]-->
+      </div>
+
+      <div class='stream'>
+        <div class='stream-title'>
+          The Streamgraph below shows volume of Tweets during the #Euro2012 period. <b>Click on a team's name to see details.</b>
+        </div>
+        <div id='stream-viz'>
+        </div>
+        <div class='stream-nav'>
+          <a href='#' class='selected' id='all-teams'>All teams</a>
+          <a href='#' id='teams-qf'>Group stage winners</a>
+          <a href='#' id='teams-nqf'>Group stage out</a>
+        </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='ES_name'>Spain</div>
+      <a href='#'>Back to top</a>
+      <div id='ES' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='IT_name'>Italy</div>
+      <a href='#'>Back to top</a>
+      <div id='IT' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='DE_name'>Germany</div>
+      <a href='#'>Back to top</a>
+      <div id='DE' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='PT_name'>Portugal</div>
+      <a href='#'>Back to top</a>
+      <div id='PT' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='CZ_name'>Czech Republic</div>
+      <a href='#'>Back to top</a>
+      <div id='CZ' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='GR_name'>Greece</div>
+      <a href='#'>Back to top</a>
+      <div id='GR' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='GB_name'>England</div>
+      <a href='#'>Back to top</a>
+      <div id='GB' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='FR_name'>France</div>
+      <a href='#'>Back to top</a>
+      <div id='FR' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='RU_name'>Russia</div>
+      <a href='#'>Back to top</a>
+      <div id='RU' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='HR_name'>Croatia</div>
+      <a href='#'>Back to top</a>
+      <div id='HR' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='UA_name'>Ukraine</div>
+      <a href='#'>Back to top</a>
+      <div id='UA' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='SE_name'>Sweden</div>
+      <a href='#'>Back to top</a>
+      <div id='SE' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='DK_name'>Denmark</div>
+      <a href='#'>Back to top</a>
+      <div id='DK' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='PL_name'>Poland</div>
+      <a href='#'>Back to top</a>
+      <div id='PL' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='IE_name'>Ireland</div>
+      <a href='#'>Back to top</a>
+      <div id='IE' class='row'>
+      </div>
+      </div>
+
+      <div class='row-wrapper'>
+      <div class='color'></div>
+      <div class='country-name' id='NL_name'>Netherlands</div>
+      <a href='#'>Back to top</a>
+      <div id='NL' class='row'>
+      </div>
+      </div>
+
+
+    </div>
+
+    <div class="footer" id='footer'>
+      Author: <a href='https://twitter.com/philogb'>@philogb</a>.
+    </div>
+
+  <div class="tooltip hide" id="tooltip" style="width:auto;"></div>
+
+
+  <div id='background' style='display: none'></div>
+  <div id='main-panel' style='display: none'>
+    <div class='header'>
+      <div class='navigation hidden'>
+        <ul>
+          <li class='previous'>previous</li> | <li class='next'>next</li> | <li class='back'>close</li>
+        </ul>
+      </div>
+    </div>
+    <div class='name-wrapper team1'>
+      <div class='team1 color'></div>
+      <div class='team1 name'></div>
+    </div>
+
+    <div class='name-wrapper team2'>
+      <div class='team2 color'></div>
+      <div class='team2 name'></div>
+    </div>
+    <div id='goals-canvas-wrapper'>
+
+    </div>
+    <div id='infovis'></div>
+    <div class='chart-left'>
+      Tweets
+    </div>
+    <div class='chart-footer'>
+      Match Time (minutes)
+    </div>
+  </div>
+
+  <script src="js/mootools-core-1.4.5.cc.js"></script>
+  <script src="js/mootools-more-1.4.0.1.cc.js"></script>
+  <!--[if IE]>
+    <script src="js/excanvas.cc.js"></script>
+  <![endif]-->
+  <script src="js/jit.cc.js"></script>
+  <script src="js/teams.cc.js" charset="utf-8"></script>
+</body>
+</html>

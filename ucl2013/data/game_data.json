@@ -1,0 +1,722 @@
+[
+  {
+    "team1": "valencia",
+    "team2": "psg",
+    "dateKey": "02-12",
+    "events": [
+      {
+        "minute": 10,
+        "type": "goal",
+        "info": "Lavezzi",
+        "side": "psg"
+      },
+      {
+        "minute": 43,
+        "type": "goal",
+        "info": "Pastore",
+        "side": "psg"
+      },
+      {
+        "minute": 90,
+        "type": "goal",
+        "info": "Rami",
+        "side": "valencia"
+      }
+    ]
+  },
+  {
+    "team1": "celtic",
+    "team2": "juventus",
+    "dateKey": "02-12",
+    "events": [
+      {
+        "minute": 3,
+        "type": "goal",
+        "info": "Matri",
+        "side": "juventus"
+      },
+      {
+        "minute": 77,
+        "type": "goal",
+        "info": "Marchisio",
+        "side": "juventus"
+      },
+      {
+        "minute": 83,
+        "type": "goal",
+        "info": "Vučinić",
+        "side": "juventus"
+      }
+    ]
+  },
+  {
+    "team1": "realmadrid",
+    "team2": "manutd",
+    "dateKey": "02-13",
+    "events": [
+      {
+        "minute": 20,
+        "type": "goal",
+        "info": "Welbeck",
+        "side": "manutd"
+      },
+      {
+        "minute": 30,
+        "type": "goal",
+        "info": "Ronaldo",
+        "side": "realmadrid"
+      }
+    ]
+  },
+  {
+    "team1": "shahktar",
+    "team2": "dortmund",
+    "dateKey": "02-13",
+    "events": [
+      {
+        "minute": 31,
+        "type": "goal",
+        "info": "Srna",
+        "side": "shahktar"
+      },
+      {
+        "minute": 41,
+        "type": "goal",
+        "info": "Lewandowski",
+        "side": "dortmund"
+      },
+      {
+        "minute": 68,
+        "type": "goal",
+        "info": "Douglas Costa",
+        "side": "shahktar"
+      },
+      {
+        "minute": 87,
+        "type": "goal",
+        "info": "Hummels",
+        "side": "dortmund"
+      }
+    ]
+  },
+  {
+    "team1": "arsenal",
+    "team2": "bayernmunich",
+    "dateKey": "02-19",
+    "events": [
+      {
+        "minute": 7,
+        "type": "goal",
+        "info": "Kroos",
+        "side": "bayernmunich"
+      },
+      {
+        "minute": 21,
+        "type": "goal",
+        "info": "T. Müller",
+        "side": "bayernmunich"
+      },
+      {
+        "minute": 55,
+        "type": "goal",
+        "info": "Podolski",
+        "side": "arsenal"
+      },
+      {
+        "minute": 77,
+        "type": "goal",
+        "info": "Mandžukić",
+        "side": "bayernmunich"
+      }
+    ]
+  },
+  {
+    "team1": "porto",
+    "team2": "malaga",
+    "dateKey": "02-19",
+    "events": [
+      {
+        "minute": 56,
+        "type": "goal",
+        "info": "João Moutinho",
+        "side": "porto"
+      }
+    ]
+  },
+  {
+    "team1": "milan",
+    "team2": "barcelona",
+    "dateKey": "02-20",
+    "events": [
+      {
+        "minute": 57,
+        "type": "goal",
+        "info": "Boateng",
+        "side": "milan"
+      },
+      {
+        "minute": 81,
+        "type": "goal",
+        "info": "Muntari",
+        "side": "milan"
+      }
+    ]
+  },
+  {
+    "team1": "galatasaray",
+    "team2": "schalke",
+    "dateKey": "02-20",
+    "events": [
+      {
+        "minute": 12,
+        "type": "goal",
+        "info": "Burak Yilmaz",
+        "side": "galatasaray"
+      },
+      {
+        "minute": 45,
+        "type": "goal",
+        "info": "Jones",
+        "side": "schalke"
+      }
+    ]
+  },
+  {
+    "team1": "dortmund",
+    "team2": "shahktar",
+    "dateKey": "03-05",
+    "events": [
+      {
+        "minute": 31,
+        "type": "goal",
+        "info": "Santana",
+        "side": "dortmund"
+      },
+      {
+        "minute": 37,
+        "type": "goal",
+        "info": "Götze",
+        "side": "dortmund"
+      },
+      {
+        "minute": 59,
+        "type": "goal",
+        "info": "Błaszczykowski",
+        "side": "dortmund"
+      }
+    ]
+  },
+  {
+    "team1": "manutd",
+    "team2": "realmadrid",
+    "dateKey": "03-05",
+    "events": [
+      {
+        "minute": 48,
+        "type": "goal",
+        "info": "Ramos (og)",
+        "side": "manutd"
+      },
+      {
+        "minute": 66,
+        "type": "goal",
+        "info": "Modrić",
+        "side": "realmadrid"
+      },
+      {
+        "minute": 69,
+        "type": "goal",
+        "info": "Ronaldo",
+        "side": "realmadrid"
+      }
+    ]
+  },
+  {
+    "team1": "juventus",
+    "team2": "celtic",
+    "dateKey": "03-06",
+    "events": [
+      {
+        "minute": 24,
+        "type": "goal",
+        "info": "Matri",
+        "side": "juventus"
+      },
+      {
+        "minute": 65,
+        "type": "goal",
+        "info": "Quagliarella",
+        "side": "juventus"
+      }
+    ]
+  },
+  {
+    "team1": "psg",
+    "team2": "valencia",
+    "dateKey": "03-06",
+    "events": [
+      {
+        "minute": 55,
+        "type": "goal",
+        "info": "Jonas",
+        "side": "valencia"
+      },
+      {
+        "minute": 66,
+        "type": "goal",
+        "info": "Lavezzi",
+        "side": "psg"
+      }
+    ]
+  },
+  {
+    "team1": "barcelona",
+    "team2": "milan",
+    "dateKey": "03-12",
+    "events": [
+      {
+        "minute": 5,
+        "type": "goal",
+        "info": "Messi",
+        "side": "barcelona"
+      },
+      {
+        "minute": 40,
+        "type": "goal",
+        "info": "Messi",
+        "side": "barcelona"
+      },
+      {
+        "minute": 55,
+        "type": "goal",
+        "info": "Villa",
+        "side": "barcelona"
+      },
+      {
+        "minute": 92,
+        "type": "goal",
+        "info": "Jordi Alba",
+        "side": "barcelona"
+      }
+    ]
+  },
+  {
+    "team1": "schalke",
+    "team2": "galatasaray",
+    "dateKey": "03-12",
+    "events": [
+      {
+        "minute": 17,
+        "type": "goal",
+        "info": "Neustädter",
+        "side": "schalke"
+      },
+      {
+        "minute": 37,
+        "type": "goal",
+        "info": "Hamit Altintop",
+        "side": "galatasaray"
+      },
+      {
+        "minute": 42,
+        "type": "goal",
+        "info": "Burak Yilmaz",
+        "side": "galatasaray"
+      },
+      {
+        "minute": 63,
+        "type": "goal",
+        "info": "Bastos",
+        "side": "schalke"
+      },
+      {
+        "minute": 95,
+        "type": "goal",
+        "info": "Umut Bulut",
+        "side": "galatasaray"
+      }
+    ]
+  },
+  {
+    "team1": "bayernmunich",
+    "team2": "arsenal",
+    "dateKey": "03-13",
+    "events": [
+      {
+        "minute": 3,
+        "type": "goal",
+        "info": "Giroud",
+        "side": "arsenal"
+      },
+      {
+        "minute": 86,
+        "type": "goal",
+        "info": "Koscielny",
+        "side": "arsenal"
+      }
+    ]
+  },
+  {
+    "team1": "malaga",
+    "team2": "porto",
+    "dateKey": "03-13",
+    "events": [
+      {
+        "minute": 43,
+        "type": "goal",
+        "info": "Isco",
+        "side": "malaga"
+      },
+      {
+        "minute": 77,
+        "type": "goal",
+        "info": "Santa Cruz",
+        "side": "malaga"
+      }
+    ]
+  },
+  {
+    "team1": "bayernmunich",
+    "team2": "juventus",
+    "dateKey": "04-02",
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "info": "Alaba",
+        "side": "bayernmunich"
+      },
+      {
+        "minute": 63,
+        "type": "goal",
+        "info": "T. Müller",
+        "side": "bayernmunich"
+      }
+    ]
+  },
+  {
+    "team1": "psg",
+    "team2": "barcelona",
+    "dateKey": "04-02",
+    "events": [
+      {
+        "minute": 38,
+        "type": "goal",
+        "info": "Messi",
+        "side": "barcelona"
+      },
+      {
+        "minute": 79,
+        "type": "goal",
+        "info": "Ibrahimović",
+        "side": "psg"
+      },
+      {
+        "minute": 89,
+        "type": "goal",
+        "info": "Xavi (p)",
+        "side": "barcelona"
+      },
+      {
+        "minute": 94,
+        "type": "goal",
+        "info": "Matuidi",
+        "side": "psg"
+      }
+    ]
+  },
+  {
+    "team1": "realmadrid",
+    "team2": "galatasaray",
+    "dateKey": "04-03",
+    "events": [
+      {
+        "minute": 9,
+        "type": "goal",
+        "info": "Ronaldo",
+        "side": "realmadrid"
+      },
+      {
+        "minute": 29,
+        "type": "goal",
+        "info": "Benzema",
+        "side": "realmadrid"
+      },
+      {
+        "minute": 73,
+        "type": "goal",
+        "info": "Higuain",
+        "side": "realmadrid"
+      }
+    ]
+  },
+  {
+    "team1": "dortmund",
+    "team2": "malaga",
+    "dateKey": "04-09",
+    "events": [
+      {
+        "minute": 25,
+        "type": "goal",
+        "info": "Joaquin",
+        "side": "malaga"
+      },
+      {
+        "minute": 40,
+        "type": "goal",
+        "info": "Lewandowski",
+        "side": "dortmund"
+      },
+      {
+        "minute": 82,
+        "type": "goal",
+        "info": "Eliseu",
+        "side": "malaga"
+      },
+      {
+        "minute": 91,
+        "type": "goal",
+        "info": "Reus",
+        "side": "dortmund"
+      },
+      {
+        "minute": 93,
+        "type": "goal",
+        "info": "Santana",
+        "side": "dortmund"
+      }
+    ]
+  },
+  {
+    "team1": "galatasaray",
+    "team2": "realmadrid",
+    "dateKey": "04-09",
+    "events": [
+      {
+        "minute": 7,
+        "type": "goal",
+        "info": "Ronaldo",
+        "side": "realmadrid"
+      },
+      {
+        "minute": 57,
+        "type": "goal",
+        "info": "Eboué",
+        "side": "galatasaray"
+      },
+      {
+        "minute": 70,
+        "type": "goal",
+        "info": "Sneijder",
+        "side": "galatasaray"
+      },
+      {
+        "minute": 72,
+        "type": "goal",
+        "info": "Drogba",
+        "side": "galatasaray"
+      },
+      {
+        "minute": 92,
+        "type": "goal",
+        "info": "Ronaldo",
+        "side": "realmadrid"
+      }
+    ]
+  },
+  {
+    "team1": "barcelona",
+    "team2": "psg",
+    "dateKey": "04-10",
+    "events": [
+      {
+        "minute": 50,
+        "type": "goal",
+        "info": "Pastore",
+        "side": "psg"
+      },
+      {
+        "minute": 71,
+        "type": "goal",
+        "info": "Pedro",
+        "side": "barcelona"
+      }
+    ]
+  },
+  {
+    "team1": "juventus",
+    "team2": "bayernmunich",
+    "dateKey": "04-10",
+    "events": [
+      {
+        "minute": 64,
+        "type": "goal",
+        "info": "Mandžukić",
+        "side": "bayernmunich"
+      },
+      {
+        "minute": 91,
+        "type": "goal",
+        "info": "Pizarro",
+        "side": "bayernmunich"
+      }
+    ]
+  },
+  {
+    "team1": "bayernmunich",
+    "team2": "barcelona",
+    "dateKey": "04-23",
+    "keyPlayerStats": [
+      ["robben", "ribery", "muller"],
+      ["villa", "iniesta", "valdes"]
+    ],
+    "events": [
+      {
+        "minute": 25,
+        "type": "goal",
+        "info": "T. Müller",
+        "side": "bayernmunich"
+      },
+      {
+        "minute": 49,
+        "type": "goal",
+        "info": "Gomez",
+        "side": "bayernmunich"
+      },
+      {
+        "minute": 73,
+        "type": "goal",
+        "info": "Robben",
+        "side": "bayernmunich"
+      },
+      {
+        "minute": 82,
+        "type": "goal",
+        "info": "T. Müller",
+        "side": "bayernmunich"
+      }
+    ]
+  },
+  {
+    "team1": "dortmund",
+    "team2": "realmadrid",
+    "dateKey": "04-24",
+    "keyPlayerStats": [
+      ["lewandowski", "hummels", "weidenfeller"],
+      ["ronaldo", "ozil", "diego"]
+    ],
+    "events": [
+      {
+        "minute": 8,
+        "type": "goal",
+        "info": "Lewandowski",
+        "side": "dortmund"
+      },
+      {
+        "minute": 43,
+        "type": "goal",
+        "info": "Ronaldo",
+        "side": "realmadrid"
+      },
+      {
+        "minute": 50,
+        "type": "goal",
+        "info": "Lewandowski",
+        "side": "dortmund"
+      },
+      {
+        "minute": 55,
+        "type": "goal",
+        "info": "Lewandowski",
+        "side": "dortmund"
+      },
+      {
+        "minute": 66,
+        "type": "goal",
+        "info": "Lewandowski (p)",
+        "side": "dortmund"
+      }
+    ]
+  },
+  {
+    "team1": "realmadrid",
+    "team2": "dortmund",
+    "dateKey": "04-30",
+    "keyPlayerStats": [
+      ["ronaldo", "benzema", "diego"],
+      ["lewandowski", "hummels", "weidenfeller"]
+    ],
+    "events": [
+      {
+        "minute": 83,
+        "type": "goal",
+        "info": "Benzema",
+        "side": "realmadrid"
+      },
+      {
+        "minute": 88,
+        "type": "goal",
+        "info": "Ramos",
+        "side": "realmadrid"
+      }
+    ]
+  },
+  {
+    "team1": "barcelona",
+    "team2": "bayernmunich",
+    "dateKey": "05-01",
+    "keyPlayerStats": [
+      ["xavi", "iniesta", "valdes"],
+      ["robben", "ribery", "muller"]
+    ],
+    "events": [
+      {
+        "minute": 49,
+        "type": "goal",
+        "info": "Robben",
+        "side": "bayernmunich"
+      },
+      {
+        "minute": 72,
+        "type": "goal",
+        "info": "Pique (og)",
+        "side": "bayernmunich"
+      },
+      {
+        "minute": 76,
+        "type": "goal",
+        "info": "T. Müller",
+        "side": "bayernmunich"
+      }
+    ]
+  },
+  {
+    "team1": "dortmund",
+    "team2": "bayernmunich",
+    "dateKey": "05-25",
+    "keyPlayerStats": [
+      ["lewandowski", "reus", "gundogan", "hummels", "subotic", "weidenfeller"],
+      ["robben", "ribery", "mandzukic", "schweinsteiger", "dante", "neuer"]
+    ],
+    "events": [
+      {
+        "minute": 60,
+        "type": "goal",
+        "info": "Mandžukić",
+        "side": "bayernmunich"
+      },
+      {
+        "minute": 68,
+        "type": "goal",
+        "info": "Gundogan (p)",
+        "side": "dortmund"
+      },
+      {
+        "minute": 89,
+        "type": "goal",
+        "info": "Robben",
+        "side": "bayernmunich"
+      }
+    ]
+  }
+]

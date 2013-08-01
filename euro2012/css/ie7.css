@@ -1,0 +1,39 @@
+      #stream-legend li {
+        display: block;
+        float: left;
+        padding: 5px 5px;
+        margin: 2px;
+        }
+
+        #stream-legend {
+          height: 50px;
+        }
+
+      .navigation ul li {
+        display: block;
+        float: left;
+        margin: 0 0.1em;
+        cursor: pointer;
+      }
+
+      #goals-canvas-wrapper {
+        margin: 0;
+        padding: 0;
+        top: 53px;
+      }
+
+      #goals-canvas-wrapper canvas {
+        margin: 0;
+        padding: 0;
+      }
+
+     #main-panel .name-wrapper > div {
+        display: block;
+        float: left;
+        margin-left: 5px;
+     }
+
+    #main-panel .color {
+      margin-top: 4px;
+    }
+
