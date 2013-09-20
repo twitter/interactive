@@ -1,0 +1,78 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <!--facebook open graph-->
+        <meta name="author" content="@philogb">
+        <meta name="og:title" content="Emmys 2013 visualization">
+        <meta name="og:url" content="http://twitter.github.io/interactive/emmys2013">
+        <meta name="og:site_name" content="Twitter">
+        <meta name="og:type" content="website">
+        <meta property="og:image" content="http://twitter.github.io/interactive/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="50">
+        <meta property="og:image:height" content="50">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Emmys 2013: each nominated show in Tweets">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="styles/1256d9b3.main.css">
+        <script src="scripts/vendor/f7f27360.modernizr.js"></script>
+    </head>
+    <body>
+      <header class="interactive">
+      <h1>
+        #interactive <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitter" data-count="none" data-hashtags="interactive">Tweet</a>
+      </h1>
+      </header>
+      <header class="top">
+        <h2>Emmys 2013: each nominated show in Tweets</h2>
+        <div class="description">
+          This shows over 39m Tweets around Emmy-nominated TV shows collected 6/1/12 - 5/31/13.
+          Tweets recorded +/-3 hours around each show only and do not include repeats. The giant circle represents the categories of show,
+          roll over each one to see numbers of Tweets. Source: <a href="http://www.socialguide.com/" target="_blank">Social Guide</a>.
+        </div>
+      </header>
+      <div class="container">
+          <div id="infovis"></div>
+
+          <div id="profile-container">
+            <nav class="size-by">
+            <ul>
+              <li>Measure by: </li>
+              <li><a href="#" class="selected" id="size-by-total-tweets">Total Tweets</a></li>
+              <li><a href="#" id="size-by-average">Avg. Tweets per Episode</a></li>
+            </ul>
+            </nav>
+
+            <h3 id="show-title">Shows</h3>
+            <div class="body"></div>
+          </div>
+
+          <div id="show-tooltip" style="display:none">
+            <div class="body tip"></div>
+            <div class="arrow-down"></div>
+          </div>
+        </div>
+
+      <!-- Twitter button -->
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+      <!-- Google analytics -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-43057350-1', 'twitter.github.io');
+        ga('send', 'pageview');
+      </script>
+
+        <script data-main="scripts/a719d574.main" src="bower_components/requirejs/require.js"></script>
+</body>
+</html>
