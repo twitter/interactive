@@ -1,13 +1,11 @@
 # Doctorwho
 
-\#DoctorWho: the biggest moments on Twitter.
-
-Since the first days of Twitter in 2007 there have been millions of Tweets about Doctor Who. And, as the BBC sci-fi series celebrates its 50th anniversary this week, this visualization shows the top 500 most-retweeted #DoctorWho Tweets of all time. Roll over a dot to see each Tweet and find out who owns the Doctor on Twitter.
+Include a description of the project here. Don't forget to include a [link](https://twitter.com/) to
+the blog post where this visualization is featured (if any).
 
 ## Libraries used
 
- * [MooTools](http://mootools.net), MIT license.
- * [PhiloGL](http://senchalabs.github.com/philogl), MIT license.
+ * Include a list of libraries used and their license.
 
 ## Authors
 
