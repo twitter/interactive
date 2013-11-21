@@ -10,7 +10,6 @@ varying vec4 vPosition;
 varying float normal_index;
 
 uniform vec4 colorUfm;
-uniform float shininess;
 
 uniform vec3 ambientColor;
 uniform vec3 directionalColor;
@@ -19,7 +18,6 @@ uniform vec3 lightingDirection;
 uniform vec3 pointLocation[LIGHT_MAX];
 uniform vec3 pointColor[LIGHT_MAX];
 uniform vec3 pointSpecularColor[LIGHT_MAX];
-uniform int numberPoints;
 
 uniform sampler2D sampler1;
 uniform sampler2D sampler2;
@@ -47,7 +45,7 @@ void main(void) {
   lightDirection = normalize(transformedPointLocation - vPosition.xyz);
 
   reflectionDirection = reflect(-lightDirection, normal);
-  specularLightWeighting = pow(max(dot(reflectionDirection, eyeDirection), 0.0), shininess);
+  specularLightWeighting = pow(max(dot(reflectionDirection, eyeDirection), 0.0), 32.0);
   specularLight += specularLightWeighting * pointSpecularColor[0];
 
   diffuseLightWeighting = max(dot(normal, lightDirection), 0.0);
