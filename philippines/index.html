@@ -1,0 +1,100 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <title>Visualised: the world responds to Typhoon Haiyan on Twitter</title>
+        <meta charset="utf-8">
+        <!--facebook open graph-->
+        <meta name="author" content="@philogb">
+        <meta name="og:title" content="Visualised: the world responds to Typhoon Haiyan on Twitter">
+        <meta name="og:url" content="http://twitter.github.io/interactive/philippines">
+        <meta name="og:site_name" content="Twitter">
+        <meta name="og:type" content="website">
+        <meta property="og:image" content="http://twitter.github.io/interactive/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="50">
+        <meta property="og:image:height" content="50">
+        <!-- Twitter card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Visualised: the world responds to Typhoon Haiyan on Twitter">
+        <meta name="twitter:description" content="When Typhoon Haiyan struck the Philippines it was the strongest tropical storm ever to hit land. Thousands of people have called for help and donations on Twitter.">
+        <meta name="twitter:image:src" content="http://twitter.github.io/interactive/philippines/images/map.png">
+        <meta name="twitter:site" content="@Twitter">
+        <meta name="twitter:creator" content="@TwitterData">
+        <meta name="twitter:url" content="http://twitter.github.io/interactive/philippines">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="When Typhoon Haiyan struck the Philippines it was the strongest tropical storm ever to hit land. Thousands of people have called for help and donations on Twitter.">
+        <meta name="viewport" content="width=device-width, initial-scale=0.35">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="styles/02b78a4b.main.css">
+        <script src="scripts/vendor/f7f27360.modernizr.js"></script>
+    </head>
+    <body>
+      <!--<input type="range" min="0" max="1" value="1" step="0.01" />-->
+      <canvas id="picking" width="500" height="500"></canvas>
+      <div class="container">
+        <header>
+        <h1>
+          Visualised: the world responds to Typhoon Haiyan on Twitter <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitter" data-count="none" data-hashtags="interactive">Tweet</a>
+        </h1>
+        </header>
+        <p>
+          When Typhoon Haiyan struck the Philippines on November 7 it was the strongest tropical storm ever to hit land.
+          Thousands of people have called for help and donations on Twitter.
+          This interactive map shows every geotagged Tweet mentioning the word ‘help’ (in 22 different languages) combined with key terms around the disaster.
+          Click on a region to see how the message spread on Twitter.
+        </p>
+
+      <!--[if lt IE 9]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+      <![endif]-->
+
+      <div class="layer-container">
+        <img class="world-map" src="images/world_translate.jpg">
+        <canvas id="tweets-renderer" width="500" height="500"></canvas>
+        <canvas id="renderer" width="500" height="500"></canvas>
+        <div class="details">
+          <header>
+            <h2 id="details-title">Title</h2>
+          </header>
+          <article class="description">
+          </article>
+          <aside class="tweets">
+          </aside>
+          <a href="#" class="back">&laquo; Back to map</a>
+        </div>
+      </div>
+
+      <ul id="clusters"></ul>
+
+      <h3>Click on a region for more information.</h3>
+      <div class="more-tweets">
+      </div>
+
+      <footer>
+      <a href="https://github.com/twitter/interactive" target="_blank">Source</a> released under the MIT license - Twitter, Inc. Author: <a href="https://twitter.com/philogb">@philogb</a>, Analytics.
+      </footer>
+
+    </div>
+      <!-- Twitter button -->
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+      <!-- Google analytics -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-43057350-1', 'twitter.github.io');
+        ga('send', 'pageview');
+      </script>
+
+        <script src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script data-main="scripts/ea389cac.main" src="bower_components/requirejs/require.js"></script>
+</body>
+</html>
