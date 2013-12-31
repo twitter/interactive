@@ -1,0 +1,89 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <title>Tweeting "Happy New Year" around the world</title>
+    <meta charset="utf-8">
+    <meta name="author" content="&lt;%=twitterUser%&gt;">
+    <meta name="description" content="">
+    <!-- Twitter card -->
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:site" value="@twitter">
+    <meta name="twitter:creator" value="kristw">
+    <meta name="twitter:url" value="http://twitter.github.io/interactive/newyear2014">
+    <meta name="twitter:title" value="Tweeting \"Happy new year\" around the world">
+    <meta name="twitter:description" value="An interactive visualization of new year greetings around the world">
+    <meta name="twitter:image" value="http://twitter.github.io/interactive/logo.png">
+    <!--facebook open graph-->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Tweeting \"Happy new year\" around the world">
+    <meta property="og:url" content="http://twitter.github.io/interactive/newyear2014">
+    <meta property="og:description" content="An interactive visualization of new year greetings around the world">
+    <meta property="og:site_name" content="Twitter">
+    <meta property="og:image" content="http://twitter.github.io/interactive/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/main.css"/>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body class="theme-fireworks">
+  <div class="header">
+    <div class="header-block">
+    <h1>
+      #interactive
+    </h1>
+    <div class="tweet-block">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitter" data-count="none" data-hashtags="interactive">Tweet</a>
+    </div>
+      <h2>Tweeting "happy new year" around the world</h2>
+
+    </div>
+  </div>
+  <div class="content-container">
+    <div class="timezone-map-vis-container">
+      <div class="timezone-map-vis"></div>
+    </div>
+    <div class="play-btn-container">
+      <div class="play-btn-wrapper">
+        <div class="play-btn-area">
+          <button id="play-btn">PLAY</button>
+        </div>
+      </div>
+    </div>
+    <div class="axis-vis-container">
+      <div class="axis-vis"></div>
+    </div>
+    <div class="main-vis-container">
+      <div class="main-vis"></div>
+      <div class="credits">
+        Source released under the MIT license - Twitter, Inc. Author: <a href="https://twitter.com/kristw">@kristw</a>, Twitter Analytics.
+        <br>
+        Timezone map topojson from <a href="http://techslides.com/time-zone-world-map-with-d3-and-topojson/">TechSlides</a>
+      </div>
+    </div>
+    <div id="the-tooltip"></div>
+  </div>
+  <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- Twitter button -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  <!-- Google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-43057350-1', 'twitter.github.io');
+    ga('send', 'pageview');
+  </script>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
