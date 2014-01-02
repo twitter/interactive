@@ -1,8 +1,8 @@
-# Newyear2014
+# New Year 2014
 
 An interactive visualization of new year greeting tweets around the world on new year day. Each time series show frequency of the greeting phase.
 
-<!-- You can find the Twitter blog post about this visualization [here](#add-link). -->
+You can find the Twitter blog post about this visualization [here](https://blog.twitter.com/2014/everybody-everywhere-ringing-in-2014).
 
 ## Libraries used
 
