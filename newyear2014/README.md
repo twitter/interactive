@@ -9,7 +9,8 @@ You can find the Twitter blog post about this visualization [here](https://blog.
 | Library       | License       |
 | ------------- |:-------------:|
 | [d3.js](http://d3js.org/) | BSD license |
-| [jquery]() | MIT license |
+| [jquery](http://jquery.com) | MIT license |
+| [figue](https://code.google.com/p/figue) | MIT license |
 | [modernizr](http://modernizr.com/) | MIT license |
 | [queue.js](https://github.com/mbostock/queue) | [license](https://github.com/mbostock/queue/blob/master/LICENSE) |
 | [requirejs](http://requirejs.org/) | new BSD, and MIT licenses |
