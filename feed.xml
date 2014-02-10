@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Twitter Data Visualizations</title>
+ <link href="http://twitter.github.io/interactive/feed.xml" rel="self"/>
+ <link href="http://twitter.github.io/interactive"/>
+ <updated>2014-02-10T09:31:52-08:00</updated>
+ <id>http://twitter.github.io/interactive</id>
+ <author>
+   <name></name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>2014 Winter Olympics</title>
+   <link href="http://twitter.github.io/interactive/sochi"/>
+   <updated>2014-02-06T00:00:00-08:00</updated>
+   <id>http://twitter.github.io/interactive/sochi</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/sochi/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>State of the Union Address</title>
+   <link href="http://twitter.github.io/interactive/sotu2014"/>
+   <updated>2014-01-29T00:00:00-08:00</updated>
+   <id>http://twitter.github.io/interactive/sotu2014</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/sotu/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Australia Day</title>
+   <link href="http://twitter.github.io/interactive/australiaday2014/"/>
+   <updated>2014-01-26T00:00:00-08:00</updated>
+   <id>http://twitter.github.io/interactive/australiaday2014/</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/australiaday/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>New Year 2014</title>
+   <link href="http://twitter.github.io/interactive/newyear2014"/>
+   <updated>2014-01-01T00:00:00-08:00</updated>
+   <id>http://twitter.github.io/interactive/newyear2014</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/ny2014/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Philippines</title>
+   <link href="http://twitter.github.io/interactive/philippines"/>
+   <updated>2013-12-16T00:00:00-08:00</updated>
+   <id>http://twitter.github.io/interactive/philippines</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/philippines/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Mandela</title>
+   <link href="http://www.flickr.com/photos/m7r/11231398326/"/>
+   <updated>2013-12-05T00:00:00-08:00</updated>
+   <id>http://www.flickr.com/photos/m7r/11231398326/</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/mandela/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Doctor Who</title>
+   <link href="http://twitter.github.io/interactive/doctorwho"/>
+   <updated>2013-11-22T00:00:00-08:00</updated>
+   <id>http://twitter.github.io/interactive/doctorwho</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/doctorwho/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Laika</title>
+   <link href="http://www.youtube.com/watch?v=Bgu_OsA7qNQ#t=10m"/>
+   <updated>2013-10-17T00:00:00-07:00</updated>
+   <id>http://www.youtube.com/watch?v=Bgu_OsA7qNQ#t=10m</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/laika/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Emmys</title>
+   <link href="http://twitter.github.io/interactive/emmys2013"/>
+   <updated>2013-09-20T00:00:00-07:00</updated>
+   <id>http://twitter.github.io/interactive/emmys2013</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/emmys/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Twitter's biggest moments</title>
+   <link href="https://blog.twitter.com/2013/behind-the-numbers-how-to-understand-big-moments-on-twitter"/>
+   <updated>2013-08-08T00:00:00-07:00</updated>
+   <id>https://blog.twitter.com/2013/behind-the-numbers-how-to-understand-big-moments-on-twitter</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/tpms/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Andes</title>
+   <link href="http://twitter.github.io/interactive/andes"/>
+   <updated>2013-06-28T00:00:00-07:00</updated>
+   <id>http://twitter.github.io/interactive/andes</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/andes/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>The Geography of Tweets</title>
+   <link href="https://blog.twitter.com/2013/the-geography-of-tweets"/>
+   <updated>2013-05-31T00:00:00-07:00</updated>
+   <id>https://blog.twitter.com/2013/the-geography-of-tweets</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/geography/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>UEFA Champions League</title>
+   <link href="https://uclfinal.twitter.com"/>
+   <updated>2013-05-23T00:00:00-07:00</updated>
+   <id>https://uclfinal.twitter.com</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/uclfinal/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>IPO roadshow visuals</title>
+   <link href="http://www.youtube.com/watch?v=01un0ORjQps"/>
+   <updated>2013-01-11T00:00:00-08:00</updated>
+   <id>http://www.youtube.com/watch?v=01un0ORjQps</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/ipo/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>New Year's Eve 2012</title>
+   <link href="https://blog.twitter.com/2013/celebrating-2013-global-town-square"/>
+   <updated>2013-01-02T00:00:00-08:00</updated>
+   <id>https://blog.twitter.com/2013/celebrating-2013-global-town-square</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/ny2013/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Political Engagement Map</title>
+   <link href="https://elections.twitter.com/map"/>
+   <updated>2012-11-01T00:00:00-07:00</updated>
+   <id>https://elections.twitter.com/map</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/pem/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Remembering the first man on the moon</title>
+   <link href="https://blog.twitter.com/2012/remembering-the-first-man-on-the-moon"/>
+   <updated>2012-08-31T00:00:00-07:00</updated>
+   <id>https://blog.twitter.com/2012/remembering-the-first-man-on-the-moon</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/armstrong/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>EuroCup</title>
+   <link href="https://euro2012.twitter.com"/>
+   <updated>2012-07-02T00:00:00-07:00</updated>
+   <id>https://euro2012.twitter.com</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/euro2012/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Euro 2012 Cheers</title>
+   <link href="http://www.flickr.com/photos/twitteroffice/7420677428/in/photostream/"/>
+   <updated>2012-06-11T00:00:00-07:00</updated>
+   <id>http://www.flickr.com/photos/twitteroffice/7420677428/in/photostream/</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/euro2012cheers/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Sleep Patterns</title>
+   <link href="https://blog.twitter.com/2012/studying-rapidly-evolving-user-interests"/>
+   <updated>2012-06-04T00:00:00-07:00</updated>
+   <id>https://blog.twitter.com/2012/studying-rapidly-evolving-user-interests</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/sleeppatterns/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Steve Jobs</title>
+   <link href="http://www.flickr.com/photos/twitteroffice/6219082960/in/set-72157633647745984"/>
+   <updated>2011-10-05T00:00:00-07:00</updated>
+   <id>http://www.flickr.com/photos/twitteroffice/6219082960/in/set-72157633647745984</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/jobs/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Spread of earthquake Tweets</title>
+   <link href="http://miguelrios.org/post/9338564551/spread-of-earthquake-related-tweets"/>
+   <updated>2011-08-24T00:00:00-07:00</updated>
+   <id>http://miguelrios.org/post/9338564551/spread-of-earthquake-related-tweets</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/earthquake2011/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Global Pulse</title>
+   <link href="https://blog.twitter.com/2011/global-pulse"/>
+   <updated>2011-06-29T00:00:00-07:00</updated>
+   <id>https://blog.twitter.com/2011/global-pulse</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/japan/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>New Year 2011</title>
+   <link href="http://www.flickr.com/photos/twitteroffice/5330389687/in/set-72157633647745984"/>
+   <updated>2011-01-06T00:00:00-08:00</updated>
+   <id>http://www.flickr.com/photos/twitteroffice/5330389687/in/set-72157633647745984</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/ny2011/1.png" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>World Cup 2010</title>
+   <link href="https://blog.twitter.com/2010/2010-world-cup-global-conversation"/>
+   <updated>2010-07-16T00:00:00-07:00</updated>
+   <id>https://blog.twitter.com/2010/2010-world-cup-global-conversation</id>
+   <content type="html">
+    
+      &lt;img src="http://twitter.github.io/interactive/assets/wc2010/1.png" />
+    
+   </content>
+ </entry>
+ 
+</feed>

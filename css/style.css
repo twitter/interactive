@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/2888A7_3_0.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  text-align: center;
+}
+
+body {
+  font-family: 'Proxima Nova', 'HelveticaNeue', 'Helvetica', sans-serif;
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+h1 {
+  margin: 25px 0 0 0;
+  font-size: 1.5em;
+  text-indent: 27px;
+  background: url(http://twitter.github.io/interactive/logo.png) no-repeat -9px -7px;
+  background-size: 42px;
+  line-height: 30px;
+}
+
+h1 > a {
+}
+
+h1 > a > img {
+  width: 19px;
+  margin-left: 10px;
+  position: relative;
+  top: 1px;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a, a:visited {
+  color: #00a;
+}
+
+section, article, header#intro {
+  margin: 50px;
+}
+
+section > header {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+section a figure {
+  text-align: left;
+  text-transform: uppercase;
+  color: #666;
+}
+
+section a figure .image {
+  width: 100%;
+  padding-bottom: 60%;
+  margin: 0;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  border: 1px solid #efefef;
+}
+
+section a:hover figure img {
+}
+
+section figcaption {
+  margin: 7px 0;
+  font-size: 0.9em;
+}
+
+section#visualizations a {
+  text-decoration: none;
+  color: #000 !important;
+}
+
+section#visualizations ul {
+  text-align: left;
+}
+
+section#visualizations > ul li {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  margin: 30px 2% 0 0;
+}
+
+nav {
+  text-align: right;
+}
+
+header.address, footer {
+  margin: 10px 0;
+  font-size: 0.7em;
+}
+
+header.address img, footer img {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen and (max-width: 1300px) {
+  section#visualizations > ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    margin: 30px 2% 0 0;
+  }
+}
