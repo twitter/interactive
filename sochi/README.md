@@ -1,4 +1,2 @@
 # Sochi
 
-author: @philogb
-
