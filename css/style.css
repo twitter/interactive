@@ -20,7 +20,7 @@ h1 {
   margin: 25px 0 0 0;
   font-size: 1.5em;
   text-indent: 27px;
-  background: url(http://twitter.github.io/interactive/logo.png) no-repeat -9px -7px;
+  background: url(../assets/logo.png) no-repeat -9px -7px;
   background-size: 42px;
   line-height: 30px;
 }
@@ -113,4 +113,119 @@ header.address img, footer img {
     width: 48%;
     margin: 30px 2% 0 0;
   }
+}
+
+/* thumbnails */
+section li a figure .wcmentions {
+  background-image: url(../assets/wcmentions/1.jpg);
+}
+
+section li a figure .cannes-lions {
+  background-image: url(../assets/cannes/1.jpg);
+}
+
+section li a figure .wcbracket {
+  background-image: url(../assets/wcbracket/1.jpg);
+}
+
+section li a figure .andes {
+  background-image: url(../assets/andes/1.jpg);
+}
+
+section li a figure .armstrong {
+  background-image: url(../assets/armstrong/1.jpg);
+}
+
+section li a figure .doctorwho {
+  background-image: url(../assets/doctorwho/1.jpg);
+}
+
+section li a figure .emmys {
+  background-image: url(../assets/emmys/1.jpg);
+}
+
+section li a figure .euro2012 {
+  background-image: url(../assets/euro2012/1.jpg);
+}
+
+section li a figure .euro2012-cheers {
+  background-image: url(../assets/euro2012cheers/1.jpg);
+}
+
+section li a figure .ipo {
+  background-image: url(../assets/ipo/1.jpg);
+}
+
+section li a figure .laika {
+  background-image: url(../assets/laika/1.jpg);
+  background-position: center center;
+}
+
+section li a figure .geo {
+  background-image: url(../assets/geography/1.jpg);
+}
+
+section li a figure .uclfinal {
+  background-image: url(../assets/uclfinal/1.jpg);
+}
+
+section li a figure .pem {
+  background-image: url(../assets/pem/1.jpg);
+}
+
+section li a figure .philippines {
+  background-image: url(../assets/philippines/1.jpg);
+}
+
+section li a figure .mandela {
+  background-image: url(../assets/mandela/1.jpg);
+}
+
+section li a figure .sotu {
+  background-image: url(../assets/sotu/1.jpg);
+}
+
+section li a figure .sochi {
+  background-image: url(../assets/sochi/1.jpg);
+}
+
+section li a figure .tpms {
+  background-image: url(../assets/tpms/1.jpg);
+}
+
+section li a figure .ny2011 {
+  background-image: url(../assets/ny2011/1.jpg);
+}
+
+section li a figure .wc2010 {
+  background-image: url(../assets/wc2010/1.jpg);
+}
+
+section li a figure .newyear2014 {
+  background-image: url(../assets/ny2014/1.jpg);
+}
+
+section li a figure .ny2013 {
+  background-image: url(../assets/ny2013/1.jpg);
+  background-position: center center;
+}
+
+section li a figure .global-pulse {
+  background-image: url(../assets/japan/1.jpg);
+}
+
+section li a figure .eq2011 {
+  background-image: url(../assets/earthquake2011/1.jpg);
+}
+
+section li a figure .jobs {
+  background-image: url(../assets/jobs/1.jpg);
+}
+
+section li a figure .sleep-patterns {
+  background-image: url(../assets/sleeppatterns/1.jpg);
+}
+
+section li a figure .australia-day {
+  background-image: url(../assets/australiaday/1.jpg);
 }

@@ -2,15 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Twitter Data Visualizations</title>
- <link href="http://twitter.github.io/interactive/feed.xml" rel="self"/>
- <link href="http://twitter.github.io/interactive"/>
- <updated>2014-02-11T15:17:39-08:00</updated>
- <id>http://twitter.github.io/interactive</id>
+ <link href="https://interactive.twitter.com/feed.xml" rel="self"/>
+ <link href="https://interactive.twitter.com"/>
+ <updated>2014-07-10T09:45:17-07:00</updated>
+ <id>https://interactive.twitter.com</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>World Cup: beyond the home team</title>
+   <link href="https://interactive.twitter.com/wcmentions"/>
+   <updated>2014-07-10T00:00:00-07:00</updated>
+   <id>https://interactive.twitter.com/wcmentions</id>
+   <content type="html">
+    
+      &lt;img src="https://interactive.twitter.com/assets/wcmentions/1.jpg" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>Cannes Lions Visuals</title>
+   <link href="http://philogb.github.io/cannes-lions/"/>
+   <updated>2014-06-15T00:00:00-07:00</updated>
+   <id>http://philogb.github.io/cannes-lions/</id>
+   <content type="html">
+    
+      &lt;img src="https://interactive.twitter.com/assets/cannes/1.jpg" />
+    
+   </content>
+ </entry>
+ 
+ <entry>
+   <title>The World Cup of Tweets</title>
+   <link href="https://interactive.twitter.com/wcbracket"/>
+   <updated>2014-06-12T00:00:00-07:00</updated>
+   <id>https://interactive.twitter.com/wcbracket</id>
+   <content type="html">
+    
+      &lt;img src="https://interactive.twitter.com/assets/wcbracket/1.jpg" />
+    
+   </content>
+ </entry>
  
  <entry>
    <title>2014 Winter Olympics</title>
@@ -19,7 +55,7 @@
    <id>http://twitter.github.io/interactive/sochi</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/sochi/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/sochi/1.jpg" />
     
    </content>
  </entry>
@@ -31,7 +67,7 @@
    <id>http://twitter.github.io/interactive/sotu2014</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/sotu/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/sotu/1.jpg" />
     
    </content>
  </entry>
@@ -43,7 +79,7 @@
    <id>http://twitter.github.io/interactive/australiaday2014/</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/australiaday/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/australiaday/1.jpg" />
     
    </content>
  </entry>
@@ -55,7 +91,7 @@
    <id>http://twitter.github.io/interactive/newyear2014</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/ny2014/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/ny2014/1.jpg" />
     
    </content>
  </entry>
@@ -67,7 +103,7 @@
    <id>http://twitter.github.io/interactive/philippines</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/philippines/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/philippines/1.jpg" />
     
    </content>
  </entry>
@@ -79,7 +115,7 @@
    <id>http://www.flickr.com/photos/m7r/11231398326/</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/mandela/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/mandela/1.jpg" />
     
    </content>
  </entry>
@@ -91,7 +127,7 @@
    <id>http://twitter.github.io/interactive/doctorwho</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/doctorwho/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/doctorwho/1.jpg" />
     
    </content>
  </entry>
@@ -103,7 +139,7 @@
    <id>http://www.youtube.com/watch?v=Bgu_OsA7qNQ#t=10m</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/laika/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/laika/1.jpg" />
     
    </content>
  </entry>
@@ -115,7 +151,7 @@
    <id>http://twitter.github.io/interactive/emmys2013</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/emmys/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/emmys/1.jpg" />
     
    </content>
  </entry>
@@ -127,7 +163,7 @@
    <id>https://blog.twitter.com/2013/behind-the-numbers-how-to-understand-big-moments-on-twitter</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/tpms/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/tpms/1.jpg" />
     
    </content>
  </entry>
@@ -139,7 +175,7 @@
    <id>http://twitter.github.io/interactive/andes</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/andes/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/andes/1.jpg" />
     
    </content>
  </entry>
@@ -151,7 +187,7 @@
    <id>https://blog.twitter.com/2013/the-geography-of-tweets</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/geography/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/geography/1.jpg" />
     
    </content>
  </entry>
@@ -163,7 +199,7 @@
    <id>https://uclfinal.twitter.com</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/uclfinal/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/uclfinal/1.jpg" />
     
    </content>
  </entry>
@@ -175,7 +211,7 @@
    <id>http://www.youtube.com/watch?v=01un0ORjQps</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/ipo/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/ipo/1.jpg" />
     
    </content>
  </entry>
@@ -187,7 +223,7 @@
    <id>https://blog.twitter.com/2013/celebrating-2013-global-town-square</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/ny2013/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/ny2013/1.jpg" />
     
    </content>
  </entry>
@@ -199,7 +235,7 @@
    <id>https://elections.twitter.com/map</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/pem/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/pem/1.jpg" />
     
    </content>
  </entry>
@@ -211,7 +247,7 @@
    <id>https://blog.twitter.com/2012/remembering-the-first-man-on-the-moon</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/armstrong/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/armstrong/1.jpg" />
     
    </content>
  </entry>
@@ -223,7 +259,7 @@
    <id>https://euro2012.twitter.com</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/euro2012/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/euro2012/1.jpg" />
     
    </content>
  </entry>
@@ -235,7 +271,7 @@
    <id>http://www.flickr.com/photos/twitteroffice/7420677428/in/photostream/</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/euro2012cheers/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/euro2012cheers/1.jpg" />
     
    </content>
  </entry>
@@ -247,7 +283,7 @@
    <id>https://blog.twitter.com/2012/studying-rapidly-evolving-user-interests</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/sleeppatterns/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/sleeppatterns/1.jpg" />
     
    </content>
  </entry>
@@ -259,7 +295,7 @@
    <id>http://www.flickr.com/photos/twitteroffice/6219082960/in/set-72157633647745984</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/jobs/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/jobs/1.jpg" />
     
    </content>
  </entry>
@@ -271,7 +307,7 @@
    <id>http://miguelrios.org/post/9338564551/spread-of-earthquake-related-tweets</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/earthquake2011/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/earthquake2011/1.jpg" />
     
    </content>
  </entry>
@@ -283,7 +319,7 @@
    <id>https://blog.twitter.com/2011/global-pulse</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/japan/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/japan/1.jpg" />
     
    </content>
  </entry>
@@ -295,7 +331,7 @@
    <id>http://www.flickr.com/photos/twitteroffice/5330389687/in/set-72157633647745984</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/ny2011/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/ny2011/1.jpg" />
     
    </content>
  </entry>
@@ -307,7 +343,7 @@
    <id>https://blog.twitter.com/2010/2010-world-cup-global-conversation</id>
    <content type="html">
     
-      &lt;img src="http://twitter.github.io/interactive/assets/wc2010/1.jpg" />
+      &lt;img src="https://interactive.twitter.com/assets/wc2010/1.jpg" />
     
    </content>
  </entry>
