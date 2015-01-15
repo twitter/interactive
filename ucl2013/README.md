@@ -7,7 +7,7 @@ A data visualization about the 2012-2013 UEFA Champions League. You can find the
  * [D3](http://d3js.org/). MIT license.
  * [jQuery](http://jquery.com/). MIT license.
  * [queue.js](https://github.com/mbostock/queue). BSD-style license.
- * [bootstrap](https://github.com/twitter/bootstrap). MIT license.
+ * [Bootstrap](http://getbootstrap.com/). MIT license.
 
 ## Authors
  * [@kristw](https://twitter.com/kristw)
