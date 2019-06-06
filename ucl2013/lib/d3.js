@@ -611,11 +611,11 @@ d3 = function() {
     };
   }
   var d3_nsPrefix = {
-    svg: "http://www.w3.org/2000/svg",
-    xhtml: "http://www.w3.org/1999/xhtml",
-    xlink: "http://www.w3.org/1999/xlink",
-    xml: "http://www.w3.org/XML/1998/namespace",
-    xmlns: "http://www.w3.org/2000/xmlns/"
+    svg: "https://www.w3.org/2000/svg",
+    xhtml: "https://www.w3.org/1999/xhtml",
+    xlink: "https://www.w3.org/1999/xlink",
+    xml: "https://www.w3.org/XML/1998/namespace",
+    xmlns: "https://www.w3.org/2000/xmlns/"
   };
   d3.ns = {
     prefix: d3_nsPrefix,
