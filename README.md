@@ -1,5 +1,7 @@
 # Twitter Interactives
 
+[![status: retired](https://opensource.twitter.dev/status/retired.svg)](https://opensource.twitter.dev/status/#retired)
+
 A repository with Twitter interactives. Managed by the visual insights team at
 Twitter. If you work at Twitter and would like to contribute to this
 repo please go to http://go/interactive and contact the visual insights
